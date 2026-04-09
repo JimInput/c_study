@@ -1,0 +1,12 @@
+# 1. Ignore everything
+*
+
+# 2. But do NOT ignore directories (so Git can look inside them)
+!*/
+
+# 3. And do NOT ignore files that have an extension (contain a dot)
+!*.*
+
+# 4. (Optional) Explicitly un-ignore important files with no extension
+!Makefile
+!README
