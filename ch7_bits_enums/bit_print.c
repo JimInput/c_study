@@ -3,7 +3,7 @@
 void bit_print(int a) {
     int i;
     int n = sizeof(int) * CHAR_BIT;     // bytes * num bits in a byte
-    int mask = 1 << (n-1);              // mask = 100...0
+    int mask = 1 << (n-1);              // mask = 100..0
 
     for (i = 1; i <= n; ++i) {
         putchar(((a & mask) == 0) ? '0' : '1');
