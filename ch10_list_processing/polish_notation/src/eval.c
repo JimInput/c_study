@@ -3,7 +3,7 @@
 /* Evaluation of the Polish stack. */
 
 int evaluate(stack *polish) {
-    data d, d1, d2;
+    data  d, d1, d2;
     stack eval;
 
     initialize(&eval);

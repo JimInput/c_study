@@ -4,9 +4,9 @@
 /* A linked list implementation of a queue. */
 
 #include <assert.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 #define EMPTY 0
 #define FULL 10000

@@ -1,10 +1,16 @@
 #include "gtree.h"
 
-int main(void) {
-    GTREE t[9];
-    t[0] = init_gnode('a', 1, NULL);
-    t[1] = init_gnode('b', 2, NULL);
-    t[1]->sib = init_gnode('f', 6, NULL);
-    t[1]->sib->sib = init_gnode('h', 8, NULL);
+#define N 9
 
+int main(void) {
+    GTREE t[N];
+
+    PAIR edges[N] = {{0, 1}, {1, 2}, {2, 3}, {1, 4}, {4, 5}, {5, 6}, {2, 7}};
+    DATA data[N] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
+
+    buildtree(edges, data, N, t);
+
+    preorder_g(t, 0);
+    free_gtree(t, 0);
+    return 0;
 }

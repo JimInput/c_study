@@ -3,10 +3,10 @@
 #include "queue.h"
 
 int main(void) {
-    int c;
-    int cnt_a = 0;
-    int cnt_b = 0;
-    data pid;       /* process id number */
+    int   c;
+    int   cnt_a = 0;
+    int   cnt_b = 0;
+    data  pid; /* process id number */
     queue a, b;
 
     initialize(&a);

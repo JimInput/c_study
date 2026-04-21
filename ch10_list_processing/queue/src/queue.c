@@ -8,7 +8,7 @@ void initialize(queue *q) {
 
 data dequeue(queue *q) {
     elem *p = q->front;
-    data d = p->d;
+    data  d = p->d;
     q->front = p->next;
     q->cnt--;
     free(p);
@@ -27,14 +27,8 @@ void enqueue(data d, queue *q) {
     q->cnt++;
 }
 
-data front(const queue *q) {
-    return q->front->d;
-}
+data front(const queue *q) { return q->front->d; }
 
-bool empty(const queue *q) {
-    return q->cnt == EMPTY;
-}
+bool empty(const queue *q) { return q->cnt == EMPTY; }
 
-bool full(const queue *q) {
-    return q->cnt==FULL;
-}
+bool full(const queue *q) { return q->cnt == FULL; }
